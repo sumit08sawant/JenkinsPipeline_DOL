@@ -1,0 +1,40 @@
+pipeline {
+
+    agent any
+
+
+    stages {
+
+        stage('Initial') {
+
+            steps {
+
+                echo 'Welcome To pipeline Script'
+
+            }
+
+        }
+
+        stage('Choice') {
+
+            steps {
+
+                input('Do you Want to Proceed To next Step')
+
+            }
+
+        }
+
+        stage('Final') {
+
+            steps {
+
+                echo 'Pipeline Script  Completed'
+
+            }
+
+        }
+
+    }
+
+}
